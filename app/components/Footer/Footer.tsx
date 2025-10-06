@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { getImagePath } from "../../../lib/utils";
@@ -33,7 +34,11 @@ const footer = () => {
               className="pb-8"
             />
             <div className="flex gap-4">
-              <Link href="https://facebook.com" className="footer-fb-icons">
+              <Link
+                href="#!"
+                onClick={(e) => e.preventDefault()}
+                className="footer-fb-icons"
+              >
                 <Image
                   src={getImagePath("/assets/footer/facebook.svg")}
                   alt="facebook"
@@ -41,7 +46,11 @@ const footer = () => {
                   height={20}
                 />
               </Link>
-              <Link href="https://twitter.com" className="footer-icons">
+              <Link
+                href="#!"
+                onClick={(e) => e.preventDefault()}
+                className="footer-icons"
+              >
                 <Image
                   src={getImagePath("/assets/footer/twitter.svg")}
                   alt="twitter"
@@ -49,7 +58,11 @@ const footer = () => {
                   height={20}
                 />
               </Link>
-              <Link href="https://instagram.com" className="footer-icons">
+              <Link
+                href="#!"
+                onClick={(e) => e.preventDefault()}
+                className="footer-icons"
+              >
                 <Image
                   src={getImagePath("/assets/footer/instagram.svg")}
                   alt="instagram"
@@ -128,20 +141,33 @@ const footer = () => {
             @2023 Agency. All Rights Reserved by{" "}
             <Link href="https://adminmart.com/" target="_blank">
               {" "}
-              Adminmart.com
+              Adminmart.com.
+            </Link>{" "}
+            Distributed by{" "}
+            <Link href="https://themewagon.com/" target="_blank">
+              ThemeWagon
             </Link>
           </h4>
+
           <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
             <h4 className="text-offwhite text-sm font-normal">
-              <Link href="/" target="_blank">
+              <a
+                href="#!"
+                onClick={(e) => e.preventDefault()}
+                className="cursor-pointer"
+              >
                 Privacy policy
-              </Link>
+              </a>
             </h4>
             <div className="h-5 bg-bordertop w-0.5"></div>
             <h4 className="text-offwhite text-sm font-normal">
-              <Link href="/" target="_blank">
+              <a
+                href="#!"
+                onClick={(e) => e.preventDefault()}
+                className="cursor-pointer"
+              >
                 Terms & conditions
-              </Link>
+              </a>
             </h4>
           </div>
         </div>
