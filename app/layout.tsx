@@ -1,3 +1,4 @@
+import CSSProvider from "./components/CSSProvider";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/index";
 import "./globals.css";
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <CSSProvider />
         <Navbar />
         {children}
         <Footer />
