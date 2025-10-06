@@ -138,10 +138,10 @@ const footer = () => {
 
         <div className="py-10 lg:flex items-center justify-between border-t border-t-bordertop">
           <h4 className="text-offwhite text-sm text-center lg:text-start font-normal">
-            @2023 Agency. All Rights Reserved by{" "}
-            <Link href="https://adminmart.com/" target="_blank">
+            @2025 Agency. All Rights Reserved by{" "}
+            <Link href="https://getnextjstemplates.com/" target="_blank">
               {" "}
-              Adminmart.com.
+              GetNextjsTemplates.
             </Link>{" "}
             Distributed by{" "}
             <Link href="https://themewagon.com/" target="_blank">
