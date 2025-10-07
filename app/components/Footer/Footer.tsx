@@ -84,7 +84,8 @@ const footer = () => {
                 {product.link.map((link: string, index: number) => (
                   <li key={index} className="mb-5">
                     <Link
-                      href="/"
+                      href="#!"
+                      onClick={(e) => e.preventDefault()}
                       className="text-white text-sm font-normal mb-6 space-links"
                     >
                       {link}
